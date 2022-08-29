@@ -4,13 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ac846dce-8bba-43b8-afd8-4a051d30e547" name="Changes" comment="Create AtlasSolution Stream, using GraphDSL">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/AtlasRideScheduler-build.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/AtlasRideScheduler-build.iml" afterDir="false" />
+    <list default="true" id="ac846dce-8bba-43b8-afd8-4a051d30e547" name="Changes" comment="Finish solution and add docker files">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/AtlasSolution.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/AtlasSolution.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/Main.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Main.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/scala/AtlasSolutionSpec.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/AtlasSolutionSpec.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -165,7 +160,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661784774053</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Finish solution and add docker files">
+      <created>1661806404415</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1661806404415</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -183,6 +185,7 @@
     <MESSAGE value="Initial Commit" />
     <MESSAGE value="Enrich ride_schedule stream" />
     <MESSAGE value="Create AtlasSolution Stream, using GraphDSL" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create AtlasSolution Stream, using GraphDSL" />
+    <MESSAGE value="Finish solution and add docker files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finish solution and add docker files" />
   </component>
 </project>
