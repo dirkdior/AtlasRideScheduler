@@ -90,25 +90,33 @@ class AtlasSolution()(implicit val system: ActorSystem) {
   val ride_schedule_flattened_sink: Sink[ByteString, Future[IOResult]] =
     writeToSinkFile("stop_details_flattened")
 
-  val graph: RunnableGraph[NotUsed] =
-    RunnableGraph.fromGraph(GraphDSL.create() { implicit builder =>
-      import GraphDSL.Implicits._
-      val broadcast = builder.add(Broadcast[List[String]](2))
+  val graph: RunnableGraph[(Future[IOResult], Future[IOResult])] =
+    RunnableGraph.fromGraph(
+      GraphDSL.createGraph(
+        ride_schedule_flattened_sink,
+        stop_details_enriched_sink
+      )((_, _)) { implicit builder => (flattenedSink, enrichedSink) =>
+        import GraphDSL.Implicits._
+        val broadcast = builder.add(Broadcast[List[String]](2))
 
-      stopDetailsSource ~> stop_details_enriched_flow ~> broadcast.in
-      broadcast.out(0) ~> CsvFormatting.format() ~> stop_details_enriched_sink
-      broadcast.out(1) ~> ride_schedule_flattened_flow ~> CsvFormatting
-        .format() ~> ride_schedule_flattened_sink
+        val formatToCSVFlow = CsvFormatting.format()
 
-      ClosedShape
-    })
+        stopDetailsSource ~> stop_details_enriched_flow ~> broadcast.in
+        broadcast.out(0) ~> formatToCSVFlow.async ~> enrichedSink
+        broadcast.out(
+          1
+        ) ~> ride_schedule_flattened_flow.async ~> formatToCSVFlow ~> flattenedSink
+
+        ClosedShape
+      }
+    )
 
   def createSourceFromFile(
       fileName: String
   ): Source[ByteString, Future[IOResult]] = {
     FileIO.fromPath(
       Paths.get(
-        getClass.getClassLoader.getResource(s"test_data/$fileName").getPath
+        s"/home/atlas/test_data/$fileName"
       )
     )
   }
@@ -118,7 +126,7 @@ class AtlasSolution()(implicit val system: ActorSystem) {
   ): Sink[ByteString, Future[IOResult]] = {
     FileIO.toPath(
       Paths.get(
-        s"./result/$fileName.csv"
+        s"/home/atlas/out/$fileName.csv"
       )
     )
   }

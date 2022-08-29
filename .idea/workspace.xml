@@ -4,12 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ac846dce-8bba-43b8-afd8-4a051d30e547" name="Changes" comment="Enrich ride_schedule stream">
+    <list default="true" id="ac846dce-8bba-43b8-afd8-4a051d30e547" name="Changes" comment="Create AtlasSolution Stream, using GraphDSL">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules/AtlasRideScheduler-build.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/AtlasRideScheduler-build.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/AtlasRideScheduler.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/AtlasRideScheduler.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.sbt" beforeDir="false" afterPath="$PROJECT_DIR$/build.sbt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/AtlasSolution.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/AtlasSolution.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/Main.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Main.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/scala/AtlasSolutionSpec.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/AtlasSolutionSpec.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +70,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="AtlasSolutionSpec" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <module name="AtlasRideScheduler" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <option name="testKind" value="Class" />
+      <option name="testClassPath" value="AtlasSolutionSpec" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="StreamResourceSpec.The StreamResource must flows yield valid results" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
       <module name="AtlasRideScheduler" />
       <option name="allowRunningInParallel" value="false" />
@@ -79,20 +93,6 @@
       <option name="testKind" value="Test name" />
       <option name="testClassPath" value="StreamResourceSpec" />
       <option name="testName" value="The StreamResource must flows yield valid results" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StreamResourceSpec.The StreamResource must load valid csv sources" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
-      <module name="AtlasRideScheduler" />
-      <option name="allowRunningInParallel" value="false" />
-      <option name="projectPathOnTarget" />
-      <option name="selectedOptions">
-        <list />
-      </option>
-      <option name="testKind" value="Test name" />
-      <option name="testClassPath" value="StreamResourceSpec" />
-      <option name="testName" value="The StreamResource must load valid csv sources" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -128,10 +128,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="ScalaTest.AtlasSolutionSpec" />
         <item itemvalue="ScalaTest.StreamResourceSpec.The StreamResource must successfully sinks to files" />
         <item itemvalue="ScalaTest.StreamResourceSpec.The StreamResource must sink to valid files" />
         <item itemvalue="ScalaTest.StreamResourceSpec.The StreamResource must flows yield valid results" />
-        <item itemvalue="ScalaTest.StreamResourceSpec.The StreamResource must load valid csv sources" />
       </list>
     </recent_temporary>
   </component>
@@ -158,7 +158,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661651720802</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Create AtlasSolution Stream, using GraphDSL">
+      <created>1661784774053</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1661784774053</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -175,6 +182,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial Commit" />
     <MESSAGE value="Enrich ride_schedule stream" />
-    <option name="LAST_COMMIT_MESSAGE" value="Enrich ride_schedule stream" />
+    <MESSAGE value="Create AtlasSolution Stream, using GraphDSL" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create AtlasSolution Stream, using GraphDSL" />
   </component>
 </project>

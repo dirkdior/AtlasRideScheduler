@@ -1,9 +1,6 @@
 # Compiled Java class files
 *.class
 
-# Compiled Python bytecode
-*.py[cod]
-
 # Log files
 *.log
 
@@ -14,6 +11,6 @@
 target/
 
 # JetBrains IDE
-/.idea/
+.idea/
 
 .bsp

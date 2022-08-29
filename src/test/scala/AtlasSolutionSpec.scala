@@ -89,7 +89,8 @@ class AtlasSolutionSpec
       val test_stop_details_enriched_flow =
         streamResource.stop_details_enriched_flow
 
-      test_stop_details_enriched_flow
+      testStopDetailsSource
+        .via(test_stop_details_enriched_flow)
         .runWith(TestSink[List[String]]())
         .request(3)
         .expectNext(
@@ -126,7 +127,9 @@ class AtlasSolutionSpec
       val test_ride_schedule_flattened_flow =
         streamResource.ride_schedule_flattened_flow
 
-      test_ride_schedule_flattened_flow
+      testStopDetailsSource
+        .via(test_stop_details_enriched_flow)
+        .via(test_ride_schedule_flattened_flow)
         .runWith(TestSink[List[String]]())
         .request(4)
         .expectNext(
