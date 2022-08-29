@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ac846dce-8bba-43b8-afd8-4a051d30e547" name="Changes" comment="Initial Commit">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="ac846dce-8bba-43b8-afd8-4a051d30e547" name="Changes" comment="Enrich ride_schedule stream">
       <change beforePath="$PROJECT_DIR$/.idea/modules/AtlasRideScheduler-build.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/AtlasRideScheduler-build.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules/AtlasRideScheduler.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/AtlasRideScheduler.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.sbt" beforeDir="false" afterPath="$PROJECT_DIR$/build.sbt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/Main.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Main.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +61,7 @@
       <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="AtlasRideScheduler" />
@@ -69,9 +69,69 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="StreamResourceSpec.The StreamResource must flows yield valid results" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <module name="AtlasRideScheduler" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <option name="testKind" value="Test name" />
+      <option name="testClassPath" value="StreamResourceSpec" />
+      <option name="testName" value="The StreamResource must flows yield valid results" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StreamResourceSpec.The StreamResource must load valid csv sources" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <module name="AtlasRideScheduler" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <option name="testKind" value="Test name" />
+      <option name="testClassPath" value="StreamResourceSpec" />
+      <option name="testName" value="The StreamResource must load valid csv sources" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StreamResourceSpec.The StreamResource must sink to valid files" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <module name="AtlasRideScheduler" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <option name="testKind" value="Test name" />
+      <option name="testClassPath" value="StreamResourceSpec" />
+      <option name="testName" value="The StreamResource must sink to valid files" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StreamResourceSpec.The StreamResource must successfully sinks to files" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <module name="AtlasRideScheduler" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <option name="testKind" value="Test name" />
+      <option name="testClassPath" value="StreamResourceSpec" />
+      <option name="testName" value="The StreamResource must successfully sinks to files" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="ScalaTest.StreamResourceSpec.The StreamResource must successfully sinks to files" />
+        <item itemvalue="ScalaTest.StreamResourceSpec.The StreamResource must sink to valid files" />
+        <item itemvalue="ScalaTest.StreamResourceSpec.The StreamResource must flows yield valid results" />
+        <item itemvalue="ScalaTest.StreamResourceSpec.The StreamResource must load valid csv sources" />
       </list>
     </recent_temporary>
   </component>
@@ -91,7 +151,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661638646229</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Enrich ride_schedule stream">
+      <created>1661651720802</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1661651720802</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -107,6 +174,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial Commit" />
+    <MESSAGE value="Enrich ride_schedule stream" />
+    <option name="LAST_COMMIT_MESSAGE" value="Enrich ride_schedule stream" />
   </component>
 </project>
